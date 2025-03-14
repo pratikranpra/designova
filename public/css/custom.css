@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'Niramit 3';
+    src: url('../fonts/Niramit-Light.ttf'),
+        font-weight: 300,
+        font-style: 'light',
+}
+
+@font-face {
+    font-family: 'Niramit 4';
+    src: url('../fonts/Niramit-Medium.ttf'),
+        font-weight: 400,
+        font-style: '500',
+}
+
+@font-face {
+    font-family: 'Niramit';
+    src: url('../fonts/Niramit-Regular.ttf'),
+        font-weight: 500,
+        font-style: 'normal',
+}
+
+@font-face {
+    font-family: 'Niramit 6';
+    src: url('../fonts/Niramit-SemiBold.ttf'),
+        font-weight: 600,
+        font-style: 'bold',
+}
+
+* {
+    font-family: 'Niramit';
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Niramit';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+
+.niramit-3 {
+    font-family: 'Niramit 3';
+}
+
+
+input:focus,
+input:focus-visible,
+select:focus,
+select:focus-visible,
+textarea:focus,
+textarea:focus-visible {
+    border: none;
+}
+
+.bg-gold {
+    background: #EFE9DF;
+}
+
+.theme-color {
+    color: #7D8494;
+}
+
+.bg-theme {
+    background-color: #7D8494;
+}
+
+.focus\:ring-ring:focus {
+    --tw-ring-color: none;
+}
+
+.focus-visible\:border-b:focus-visible {
+    border-bottom: 2px solid #343839;
+}
+
+select:border-b:focus-visible {
+    border-bottom: 2px solid #343839;
+}
+
+.page-body {
+    min-height: 60vh;
+}
+
+.absolute-header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+.sticky-header {
+    position: sticky;
+    top: 0;
+    padding: 5px 0;
+    background: #FFF;
+}
+
+.radiant-bg {
+    /* background: rgb(204, 204, 204);
+    background: radial-gradient(circle, rgba(204, 204, 204, 1.5) 0%, rgba(125, 132, 148, 1) 100%); */
+    background: radial-gradient(circle, #8a8f9c, #636978);
+}
+
+.radiant-bg-lg {
+    background: rgb(204, 204, 204);
+    background: linear-gradient(212deg, rgba(204, 204, 204, 1) 20%, rgba(125, 132, 148, 1) 100%);
+}
+
+.radiant-bg-right {
+    background: rgb(204, 204, 204);
+    background: linear-gradient(148deg, rgba(204, 204, 204, 1) 20%, rgba(125, 132, 148, 1) 100%);
+}
+
+@media screen and (max-width: 1022px) and (min-width: 300px) {
+    .inner-section .float-right {
+        float: none;
+    }
+
+    .inner-section .people {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 300px) {
+
+    .inner-section .people {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
