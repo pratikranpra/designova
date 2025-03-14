@@ -21,23 +21,23 @@ export default function Home() {
     // Timeline
     const timelineData = [
         {
-            date: '1989',
-            //title: 'Started the project',
+            date: "1989",
+            //title: "Started the project",
             description: 'The introduction of the first commercial CAD software for jewelry design, such as JewelCAD, marked a significant milestone.JewelCAD allowed designers to create detailed 3D models of jewelry pieces, which could be easily modified and refined.',
         },
         {
-            date: '1994',
-            //title: 'Implemented the timeline feature',
+            date: "1994",
+            //title: "Implemented the timeline feature",
             description: "The development of Rhino, a versatile 3D modeling software, further expanded the capabilities of CAD in jewelry design. Rhino's user- friendly interface and powerful tools made it a popular choice among jewelry designers.",
         },
         {
-            date: '2001',
-            //title: 'Completed the UI design',
+            date: "2001",
+            //title: "Completed the UI design",
             description: "The launch of Matrix, a CAD software specifically tailored for jewelry design, revolutionized the industry. Matrix offered advanced features like parametric design and rendering, enabling designers to create highly detailed and customizable jewelry pieces.",
         },
         {
-            date: '2010',
-            //title: 'Deployment in progress',
+            date: "2010",
+            //title: "Deployment in progress",
             description: "The integration of 3D printing technology with CAD software transformed the prototyping and manufacturing processes. Designers could now create physical prototypes directly from their digital models, reducing the time and cost associated with traditional methods.",
         },
     ];
