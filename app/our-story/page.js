@@ -41,20 +41,20 @@ export default function Home() {
                             <h3 className="text-[24px] bg-theme text-center text-white py-1 rounded-sm radiant-bg rounded-b-[0]">Company Mission</h3>
 
                             <div className="px-[20px] my-[25px] sm:x-[55x] md:x-[55px] lg:x-[55px] xl:x-[55px] mt-[30px]">
-                                <p className="text-md sm:text-xl md:text-xl lg:text-xl xl:text-xl ">At DesigNova Studios, our mission is to revolutionize the jewelry industry through cutting-edge technology, innovative manufacturing processes, and a steadfast commitment to integrity and transparency. We aim to set new standards in operational excellence in serving our employees and strategic partners providing comprehensive back-office, manufacturing, design, and logistics support.</p>
+                                <p className="text-md sm:text-xl ">At DesigNova Studios, our mission is to revolutionize the jewelry industry through cutting-edge technology, innovative manufacturing processes, and a steadfast commitment to integrity and transparency. We aim to set new standards in operational excellence in serving our employees and strategic partners providing comprehensive back-office, manufacturing, design, and logistics support.</p>
 
                                 <div className="mt-12">
-                                    <h3 className="text-2xl underline my-4">Founders:</h3>
+                                    <h3 className="text-2xl underline mt-6 mb-1">Founders:</h3>
 
-                                    <p className="text-md sm:text-xl md:text-xl lg:text-xl xl:text-xl  pl-6">DesigNova Studios was founded by <span className="theme-color font-bold">Patsy</span> and <span className="theme-color font-bold">David Wesson</span>, both seasoned professionals with extensive experience in their respective fields. Patsy, a Graduate Gemologist (GIA GG) with nearly 40 years of experience, had previously owned two brick-and-mortar jewelry stores. Her journey to find a true manufacturing partner was fueled by her unwavering passion for excellence. However, she faced numerous disappointments with manufacturers who delivered inconsistent quality, slow turnaround times, and unpredictable pricing. These challenges only strengthened her resolve, leading her to establish DesigNova Studios—a place where her vision for consistent, high-quality craftsmanship could finally be realized.</p>
+                                    <p className="text-md sm:text-xl pl-6">DesigNova Studios was founded by <span className="theme-color font-bold">Patsy</span> and <span className="theme-color font-bold">David Wesson</span>, both seasoned professionals with extensive experience in their respective fields. Patsy, a Graduate Gemologist (GIA GG) with nearly 40 years of experience, had previously owned two brick-and-mortar jewelry stores. Her journey to find a true manufacturing partner was fueled by her unwavering passion for excellence. However, she faced numerous disappointments with manufacturers who delivered inconsistent quality, slow turnaround times, and unpredictable pricing. These challenges only strengthened her resolve, leading her to establish DesigNova Studios—a place where her vision for consistent, high-quality craftsmanship could finally be realized.</p>
 
-                                    <p className="text-md sm:text-xl md:text-xl lg:text-xl xl:text-xl  my-3 pl-6">David, a serial entrepreneur with a background in engineering, manufacturing, and distribution of oil and gas products, has founded, built, and sold multiple companies, amassing over 100 patents throughout his career. Together, the Wessons are fueled by their commitment to relationships and empowering others, creating a studio that embodies their dedication to excellence and innovation.</p>
+                                    <p className="text-md sm:text-xl  my-3 pl-6">David, a serial entrepreneur with a background in engineering, manufacturing, and distribution of oil and gas products, has founded, built, and sold multiple companies, amassing over 100 patents throughout his career. Together, the Wessons are fueled by their commitment to relationships and empowering others, creating a studio that embodies their dedication to excellence and innovation.</p>
                                 </div>
 
                                 <div className="mt-16">
-                                    <h3 className="text-2xl underline my-4">Leadership and Team:</h3>
+                                    <h3 className="text-2xl underline mt-6 mb-1">Leadership and Team:</h3>
 
-                                    <p className="text-md sm:text-xl md:text-xl lg:text-xl xl:text-xl  pl-6">In collaboration our vision is driven forward, with appointing <span className="theme-color font-bold">Jerry Taylor</span> as our Chief Operating Officer (COO). Jerry brings a wealth of knowledge in jewelry manufacturing, design, sales, marketing, and process optimization. Jerry has over 35 years' experience in all facets of jewelry manufacturing from designing, casting, bench, to finishing. He has been recognized for his work and has awards as an International Jewelry Designer as well as an award from the Santa Fe Symposium for his product development work. Together with the Wesson's, operational excellence is possible and has created a new standard in the industry.</p>
+                                    <p className="text-md sm:text-xl pl-6">In collaboration our vision is driven forward, with appointing <span className="theme-color font-bold">Jerry Taylor</span> as our Chief Operating Officer (COO). Jerry brings a wealth of knowledge in jewelry manufacturing, design, sales, marketing, and process optimization. Jerry has over 35 years' experience in all facets of jewelry manufacturing from designing, casting, bench, to finishing. He has been recognized for his work and has awards as an International Jewelry Designer as well as an award from the Santa Fe Symposium for his product development work. Together with the Wesson's, operational excellence is possible and has created a new standard in the industry.</p>
                                 </div>
 
                                 <div className="mt-16 text-center">
@@ -70,34 +70,34 @@ export default function Home() {
                             <h3 className="text-[24px] bg-theme text-center text-white py-1 rounded-sm rounded-b-[0] radiant-bg">What we do</h3>
 
                             <div className="px-[20px] my-[25px] sm:x-[55x] md:x-[55px] lg:x-[55px] xl:x-[55px] mt-[30px]">
-                                <h3 className="text-2xl underline my-4">Global Operations:</h3>
-                                <p className="text-md sm:text-xl md:text-xl lg:text-xl xl:text-xl  pl-6">DesigNova Studios is strategically headquartered in Fort Worth, TX, with additional offices in India.</p>
+                                <h3 className="text-2xl underline mt-6 mb-1">Global Operations:</h3>
+                                <p className="text-md sm:text-xl pl-6">DesigNova Studios is strategically headquartered in Fort Worth, TX, with additional offices in India.</p>
 
-                                <p className="text-md sm:text-xl md:text-xl lg:text-xl xl:text-xl  mt-12">This global presence offers several key benefits:</p>
+                                <p className="text-md sm:text-xl mt-12">This global presence offers several key benefits:</p>
 
-                                <h3 className="text-2xl underline my-4">Cost-Effective Scaling:</h3>
-                                <p className="text-md sm:text-xl md:text-xl lg:text-xl xl:text-xl  pl-6">By leveraging our international offices, we can scale brands more cost-effectively. The lower operational costs in India allow us to offer competitive pricing without compromising on quality.</p>
+                                <h3 className="text-2xl underline mt-6 mb-1">Cost-Effective Scaling:</h3>
+                                <p className="text-md sm:text-xl pl-6">By leveraging our international offices, we can scale brands more cost-effectively. The lower operational costs in India allow us to offer competitive pricing without compromising on quality.</p>
 
-                                <h3 className="text-2xl underline my-4">Rapid Execution:</h3>
-                                <p className="text-md sm:text-xl md:text-xl lg:text-xl xl:text-xl  pl-6">Our global network enables us to execute quickly, taking designs from concept to market in record time. This agility is crucial for small brands looking to make a significant impact in the market.</p>
+                                <h3 className="text-2xl underline mt-6 mb-1">Rapid Execution:</h3>
+                                <p className="text-md sm:text-xl pl-6">Our global network enables us to execute quickly, taking designs from concept to market in record time. This agility is crucial for small brands looking to make a significant impact in the market.</p>
 
-                                <h3 className="text-2xl underline my-4">24/6 Operations:</h3>
-                                <p className="text-md sm:text-xl md:text-xl lg:text-xl xl:text-xl  pl-6">With offices in different time zones, we can operate around the clock. This ensures continuous progress on projects and faster turnaround times, enhancing overall efficiency.</p>
+                                <h3 className="text-2xl underline mt-6 mb-1">24/6 Operations:</h3>
+                                <p className="text-md sm:text-xl pl-6">With offices in different time zones, we can operate around the clock. This ensures continuous progress on projects and faster turnaround times, enhancing overall efficiency.</p>
 
-                                <h3 className="text-2xl underline my-4"> Access to Diverse Talent:</h3>
-                                <p className="text-md sm:text-xl md:text-xl lg:text-xl xl:text-xl  pl-6">Our international offices provide access to a diverse pool of talent. This diversity fosters innovation and brings a wide range of perspectives to our design and manufacturing processes.</p>
+                                <h3 className="text-2xl underline mt-6 mb-1"> Access to Diverse Talent:</h3>
+                                <p className="text-md sm:text-xl pl-6">Our international offices provide access to a diverse pool of talent. This diversity fosters innovation and brings a wide range of perspectives to our design and manufacturing processes.</p>
 
-                                <h3 className="text-2xl underline my-4">Enhanced Customer Support:</h3>
-                                <p className="text-md sm:text-xl md:text-xl lg:text-xl xl:text-xl  pl-6">Having a local presence in Fort Worth allows us to offer personalized customer support to our U.S.-based clients. Meanwhile, our team in India can provide support to clients in other regions, ensuring a seamless experience for all our partners.</p>
+                                <h3 className="text-2xl underline mt-6 mb-1">Enhanced Customer Support:</h3>
+                                <p className="text-md sm:text-xl pl-6">Having a local presence in Fort Worth allows us to offer personalized customer support to our U.S.-based clients. Meanwhile, our team in India can provide support to clients in other regions, ensuring a seamless experience for all our partners.</p>
 
-                                <h3 className="text-2xl underline my-4">Global Partnerships:</h3>
-                                <p className="text-md sm:text-xl md:text-xl lg:text-xl xl:text-xl  pl-6">Our worldwide partnerships enable us to handle any volume of production. This flexibility allows us to cater to the needs of both small and large brands, ensuring we can meet the demands of a growing market.</p>
+                                <h3 className="text-2xl underline mt-6 mb-1">Global Partnerships:</h3>
+                                <p className="text-md sm:text-xl pl-6">Our worldwide partnerships enable us to handle any volume of production. This flexibility allows us to cater to the needs of both small and large brands, ensuring we can meet the demands of a growing market.</p>
 
-                                <h3 className="text-2xl underline my-4">Market Insights:</h3>
-                                <p className="text-md sm:text-xl md:text-xl lg:text-xl xl:text-xl  pl-6">Being present in multiple regions gives us valuable insights into different markets. This knowledge helps us tailor our strategies to meet the unique needs of each market, enhancing our ability to drive brand success.</p>
+                                <h3 className="text-2xl underline mt-6 mb-1">Market Insights:</h3>
+                                <p className="text-md sm:text-xl pl-6">Being present in multiple regions gives us valuable insights into different markets. This knowledge helps us tailor our strategies to meet the unique needs of each market, enhancing our ability to drive brand success.</p>
 
-                                <h3 className="text-2xl underline my-4">Data:</h3>
-                                <p className="text-md sm:text-xl md:text-xl lg:text-xl xl:text-xl  pl-6">Using cloud.designova.studios, data is the backbone of our ERP systems, driving automation and efficiency across all operations. By leveraging real-time data analytics, our ERP systems streamline processes such as inventory management, order processing, and production scheduling. This data-driven approach ensures that every aspect of the manufacturing workflow is optimized, reducing manual intervention and minimizing errors. The result is a seamless, automated environment where data insights lead to smarter decision-making, faster turnaround times, and consistent product quality.</p>
+                                <h3 className="text-2xl underline mt-6 mb-1">Data:</h3>
+                                <p className="text-md sm:text-xl pl-6">Using cloud.designova.studios, data is the backbone of our ERP systems, driving automation and efficiency across all operations. By leveraging real-time data analytics, our ERP systems streamline processes such as inventory management, order processing, and production scheduling. This data-driven approach ensures that every aspect of the manufacturing workflow is optimized, reducing manual intervention and minimizing errors. The result is a seamless, automated environment where data insights lead to smarter decision-making, faster turnaround times, and consistent product quality.</p>
 
                                 <p className="mt-12 text-xl">By combining the strengths of our international and local offices, DesigNova Studios is well-positioned to take small brands to the next level, offering unparalleled efficiency, innovation, and market reach. With a strong foundation built on decades of experience and a forward-thinking approach, DesigNova Studios is poised to revolutionize the fine jewelry industry. We are dedicated to fostering long-term relationships with our partners and delivering extraordinary results through knowledge, innovation, and collaboration.</p>
 

@@ -1,7 +1,7 @@
 import { static_const } from './../../lib/constants';
 
 export const metadata = {
-    title: 'Facets - ' + static_const['site_title'],
+    title: 'Finshing - ' + static_const['site_title'],
     description: static_const['site_desc'],
 };
 

@@ -57,7 +57,7 @@ export default function Home() {
                                 transition={{ duration: 0.8, ease: "easeOut", delay: 0.35 }}
                                 className=""
                             >
-                                <div className="people items-center px-[15px] rounded-xl border bg-card text-card-foreground shadow sm:flex xl:w-[50%] md:w-[75%] lg:w-[75%] mt-8 md:ml-auto md:mr-auto">
+                                <div className="people items-center px-[15px] rounded-xl border bg-card text-card-foreground shadow sm:flex xl:w-[50%] md:w-[75%] lg:w-[75%] mt-8 sm:float-left float-none ml-[20px] sm:ml-[15%]">
                                     <Image src="/images/finishing_bg.png" alt="DesigNova" width={500} height={500} className="w-full h-auto md:w-[200px] md:h-[200px] sm:ml-[-15px] rounded-t-xl sm:rounded-l-xl" quality={100} />
                                     <div className="pl-8 my-6 md:my-0">
                                         <h3 className="text-2xl flex-1 theme-color">Petty Wesson</h3>
@@ -65,14 +65,16 @@ export default function Home() {
                                         <p className="text-md leading-[20px] mt-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, debitis alias voluptatem dolore ipsum maiores eos tempora soluta aspernatur quibusdam repellat placeat sint asperiores id doloribus, ad cumque nisi deleniti.</p>
                                     </div>
                                 </div>
-                                <div className="people items-center px-[15px] rounded-xl border bg-card text-card-foreground shadow sm:flex xl:w-[50%] md:w-[75%] lg:w-[75%] mt-8 md:ml-auto md:mr-auto ">
+                                <div className="clear-both"></div>
+                                <div className="people items-center px-[15px] rounded-xl border bg-card text-card-foreground shadow sm:flex xl:w-[50%] md:w-[75%] lg:w-[75%] mt-8 ml-[20px] sm:ml-[15%] sm:float-left float-none">
                                     <Image src="/images/finishing_bg.png" alt="DesigNova" width={500} height={500} className="w-full h-auto md:w-[200px] md:h-[200px] sm:ml-[-15px] rounded-t-xl sm:rounded-l-xl" quality={100} />
                                     <div className="pl-8 my-6 md:my-0">
                                         <h3 className="text-2xl flex-1 theme-color">David Wesson</h3>
-                                        <p className="text-[#999] text-md">Founder & CMO</p>
+                                        <p className="text-[#999] text-md">Advisor</p>
                                         <p className="text-md leading-[20px] mt-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, debitis alias voluptatem dolore ipsum maiores eos tempora soluta aspernatur quibusdam repellat placeat sint asperiores id doloribus, ad cumque nisi deleniti.</p>
                                     </div>
                                 </div>
+                                <div className="clear-both"></div>
                             </motion.div>
 
                             <div className="clear-both"></div>
@@ -94,22 +96,12 @@ export default function Home() {
                                 className=""
                             >
                                 <div className="text-right">
-                                    <div className="people items-center px-[15px] rounded-xl border bg-card text-card-foreground shadow sm:flex xl:w-[50%] md:w-[75%] lg:w-[75%] mt-8 md:ml-auto md:mr-auto float-right md:float-none">
+                                    <div className="people items-center px-[15px] rounded-xl border bg-card text-card-foreground shadow sm:flex xl:w-[50%] md:w-[75%] lg:w-[75%] mt-8 md:ml-auto mr-0 sm:mr-[15%] float-right sm:pr-0">
                                         <Image src="/images/finishing_bg.png" alt="DesigNova" width={500} height={500} className="w-full h-auto md:w-[200px] md:h-[200px] sm:ml-[-15px] rounded-t-xl sm:rounded-r-xl sm:hidden" quality={100} />
                                         <div className="pr-8 my-6 md:my-0">
                                             <h3 className="text-2xl flex-1 theme-color">Jerry Taylor</h3>
                                             <p className="text-[#999] text-md">Working Position</p>
                                             <p className="text-md leading-[20px] mt-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, debitis alias voluptatem dolore ipsum maiores eos tempora soluta aspernatur quibusdam repellat placeat sint asperiores id doloribus, ad cumque nisi deleniti.</p>
-                                        </div>
-                                        <Image src="/images/finishing_bg.png" alt="DesigNova" width={500} height={500} className="w-full h-auto md:w-[200px] md:h-[200px] sm:ml-[-15px] rounded-t-xl sm:rounded-r-xl hidden sm:block" quality={100} />
-                                    </div>
-                                    <div className="clear-both"></div>
-                                    <div className="people items-center px-[15px] rounded-xl border bg-card text-card-foreground shadow sm:flex xl:w-[50%] md:w-[75%] lg:w-[75%] mt-8 md:ml-auto md:mr-auto float-right md:float-none sm:hidden">
-                                        <Image src="/images/finishing_bg.png" alt="DesigNova" width={500} height={500} className="w-full h-auto md:w-[200px] md:h-[200px] sm:ml-[-15px] rounded-t-xl sm:rounded-r-xl" quality={100} />
-                                        <div className="pr-8 my-6 md:my-0">
-                                            <h3 className="text-2xl flex-1 theme-color">Gargi Chavan</h3>
-                                            <p className="text-[#999] text-md">Working Position</p>
-                                            <p className="text-md leading-[20px] mt-1">Head of Asia Logistics.<br /> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, debitis alias voluptatem dolore ipsum maiores eos tempora</p>
                                         </div>
                                         <Image src="/images/finishing_bg.png" alt="DesigNova" width={500} height={500} className="w-full h-auto md:w-[200px] md:h-[200px] sm:ml-[-15px] rounded-t-xl sm:rounded-r-xl hidden sm:block" quality={100} />
                                     </div>
@@ -133,7 +125,7 @@ export default function Home() {
                                 transition={{ duration: 0.8, ease: "easeOut", delay: 0.35 }}
                                 className=""
                             >
-                                <div className="people items-center px-[15px] rounded-xl border bg-card text-card-foreground shadow sm:flex xl:w-[50%] md:w-[75%] lg:w-[75%] mt-8 md:ml-auto md:mr-auto">
+                                <div className="people items-center px-[15px] rounded-xl border bg-card text-card-foreground shadow sm:flex xl:w-[50%] md:w-[75%] lg:w-[75%] mt-8 ml-[20px] sm:ml-[15%] sm:float-left float-none">
                                     <Image src="/images/finishing_bg.png" alt="DesigNova" width={500} height={500} className="w-full h-auto md:w-[200px] md:h-[200px] sm:ml-[-15px] rounded-t-xl sm:rounded-l-xl" quality={100} />
                                     <div className="pl-8 my-6 md:my-0">
                                         <h3 className="text-2xl flex-1 theme-color">Tamara Roberts</h3>
@@ -141,6 +133,7 @@ export default function Home() {
                                         <p className="text-md leading-[20px] mt-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, debitis alias voluptatem dolore ipsum maiores eos tempora soluta aspernatur quibusdam repellat placeat sint asperiores id doloribus, ad cumque nisi deleniti.</p>
                                     </div>
                                 </div>
+                                <div className="clear-both"></div>
                             </motion.div>
 
                             <div className="clear-both"></div>
@@ -162,12 +155,22 @@ export default function Home() {
                                 className=""
                             >
                                 <div className="text-right">
-                                    <div className="people items-center px-[15px] rounded-xl border bg-card text-card-foreground shadow sm:flex xl:w-[50%] md:w-[75%] lg:w-[75%] mt-8 md:ml-auto md:mr-auto float-right md:float-none">
+                                    <div className="people items-center px-[15px] rounded-xl border bg-card text-card-foreground shadow sm:flex xl:w-[50%] md:w-[75%] lg:w-[75%] mt-8 mr-0 sm:mr-[15%] float-right mr-0 sm:pr-0">
                                         <Image src="/images/finishing_bg.png" alt="DesigNova" width={500} height={500} className="w-full h-auto md:w-[200px] md:h-[200px] sm:ml-[-15px] rounded-t-xl sm:rounded-r-xl sm:hidden" quality={100} />
                                         <div className="pr-8 my-6 md:my-0">
                                             <h3 className="text-2xl flex-1 theme-color">Ankit Moliya</h3>
                                             <p className="text-[#999] text-md">Working Position</p>
                                             <p className="text-md leading-[20px] mt-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, debitis alias voluptatem dolore ipsum maiores eos tempora soluta aspernatur quibusdam repellat placeat sint asperiores id doloribus, ad cumque nisi deleniti.</p>
+                                        </div>
+                                        <Image src="/images/finishing_bg.png" alt="DesigNova" width={500} height={500} className="w-full h-auto md:w-[200px] md:h-[200px] sm:ml-[-15px] rounded-t-xl sm:rounded-r-xl hidden sm:block" quality={100} />
+                                    </div>
+                                    <div className="clear-both"></div>
+                                    <div className="people items-center px-[15px] rounded-xl border bg-card text-card-foreground shadow sm:flex xl:w-[50%] md:w-[75%] lg:w-[75%] mt-8 mr-0 sm:mr-[15%] float-right sm:pr-0">
+                                        <Image src="/images/finishing_bg.png" alt="DesigNova" width={500} height={500} className="w-full h-auto md:w-[200px] md:h-[200px] sm:ml-[-15px] rounded-t-xl sm:rounded-r-xl sm:hidden" quality={100} />
+                                        <div className="pr-8 my-6 md:my-0">
+                                            <h3 className="text-2xl flex-1 theme-color">Pratik Ranpara</h3>
+                                            <p className="text-[#999] text-md">IT and Head of Web Development</p>
+                                            <p className="text-md leading-[20px] mt-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, debitis alias voluptatem dolore ipsum maiores eos tempora soluta aspernatur quibusdam eriores id doloribus, ad cumque nisi deleniti.</p>
                                         </div>
                                         <Image src="/images/finishing_bg.png" alt="DesigNova" width={500} height={500} className="w-full h-auto md:w-[200px] md:h-[200px] sm:ml-[-15px] rounded-t-xl sm:rounded-r-xl hidden sm:block" quality={100} />
                                     </div>
@@ -191,7 +194,7 @@ export default function Home() {
                                 transition={{ duration: 0.8, ease: "easeOut", delay: 0.35 }}
                                 className=""
                             >
-                                <div className="people items-center px-[15px] rounded-xl border bg-card text-card-foreground shadow sm:flex xl:w-[50%] md:w-[75%] lg:w-[75%] mt-8 md:ml-auto md:mr-auto">
+                                <div className="people items-center px-[15px] rounded-xl border bg-card text-card-foreground shadow sm:flex xl:w-[50%] md:w-[75%] lg:w-[75%] mt-8 ml-[20px] sm:ml-[15%] sm:float-left float-none">
                                     <Image src="/images/finishing_bg.png" alt="DesigNova" width={500} height={500} className="w-full h-auto md:w-[200px] md:h-[200px] sm:ml-[-15px] rounded-t-xl sm:rounded-l-xl" quality={100} />
                                     <div className="pl-8 my-6 md:my-0">
                                         <h3 className="text-2xl flex-1 theme-color">Isaiah Rameriz</h3>
@@ -199,7 +202,8 @@ export default function Home() {
                                         <p className="text-md leading-[20px] mt-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, debitis alias voluptatem dolore ipsum maiores eos tempora soluta aspernatur quibusdam repellat placeat sint asperiores id doloribus, ad cumque nisi deleniti.</p>
                                     </div>
                                 </div>
-                                <div className="people items-center px-[15px] rounded-xl border bg-card text-card-foreground shadow sm:flex xl:w-[50%] md:w-[75%] lg:w-[75%] mt-8 md:ml-auto md:mr-auto">
+                                <div className="clear-both"></div>
+                                <div className="people items-center px-[15px] rounded-xl border bg-card text-card-foreground shadow sm:flex xl:w-[50%] md:w-[75%] lg:w-[75%] mt-8 ml-[20px] sm:ml-[15%] sm:float-left float-none">
                                     <Image src="/images/finishing_bg.png" alt="DesigNova" width={500} height={500} className="w-full h-auto md:w-[200px] md:h-[200px] sm:ml-[-15px] rounded-t-xl sm:rounded-l-xl" quality={100} />
                                     <div className="pl-8 my-6 md:my-0">
                                         <h3 className="text-2xl flex-1 theme-color">Sonu Karmakar</h3>
@@ -207,7 +211,33 @@ export default function Home() {
                                         <p className="text-md leading-[20px] mt-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, debitis alias voluptatem dolore ipsum maiores eos tempora soluta aspernatur quibusdam repellat placeat sint asperiores id doloribus, ad cumque nisi deleniti.</p>
                                     </div>
                                 </div>
+                                <div className="clear-both"></div>
+
+                                <div className="people items-center px-[15px] rounded-xl border bg-card text-card-foreground shadow sm:flex xl:w-[50%] md:w-[75%] lg:w-[75%] mt-8 ml-[20px] sm:ml-[15%] sm:float-left float-none">
+                                    <Image src="/images/finishing_bg.png" alt="DesigNova" width={500} height={500} className="w-full h-auto md:w-[200px] md:h-[200px] sm:ml-[-15px] rounded-t-xl sm:rounded-l-xl" quality={100} />
+                                    <div className="pl-8 my-6 md:my-0">
+                                        <h3 className="text-2xl flex-1 theme-color">Gargi Chavan</h3>
+                                        <p className="text-[#999] text-md">Head of Asia Logistics in Manufacturing</p>
+                                        <p className="text-md leading-[20px] mt-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, debitis alias voluptatem dolore ipsum maiores eos tempora soluta aspernatur quibusdam repellat placeat sint asperiores id doloribus, ad cumque nisi deleniti.</p>
+                                    </div>
+                                </div>
+
+                                <div className="clear-both"></div>
+
+                                <div className="people items-center px-[15px] rounded-xl border bg-card text-card-foreground shadow sm:flex xl:w-[50%] md:w-[75%] lg:w-[75%] mt-8 ml-[20px] sm:ml-[15%] sm:float-left float-none">
+                                    <Image src="/images/finishing_bg.png" alt="DesigNova" width={500} height={500} className="w-full h-auto md:w-[200px] md:h-[200px] sm:ml-[-15px] rounded-t-xl sm:rounded-l-xl" quality={100} />
+                                    <div className="pl-8 my-6 md:my-0">
+                                        <h3 className="text-2xl flex-1 theme-color">Styles Merrit</h3>
+                                        <p className="text-[#999] text-md">Manufacturing Engineer</p>
+                                        <p className="text-md leading-[20px] mt-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, debitis alias voluptatem dolore ipsum maiores eos tempora soluta aspernatur quibusdam repellat placeat sint asperiores id doloribus, ad cumque nisi deleniti.</p>
+                                    </div>
+                                </div>
+
+
+                                <div className="clear-both"></div>
                             </motion.div>
+
+                            <h3 className="text-xl sm:text-3xl mt-[150px] text-center center theme-color hidden">More on this soon.</h3>
 
                             <div className="clear-both"></div>
                         </div>

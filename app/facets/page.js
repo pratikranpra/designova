@@ -40,9 +40,9 @@ export default function Home() {
                     <hr className="hidden lg:block md:hidden xl:block" />
                     <h3 className="text-3xl md:text-3xl lg:text-4xl xl:text-5xl text-center text-[#7D8494] top-[-30px] left-[25%] z-49 bg-[#fff] px-[20px] lg:text-3xl md:text-3xl lg:top-[-22px] md:top-[-22px] lg:absolute xl:absolute md:block md:mb-0">Explore the Art behind each Creation</h3>
 
-                    <div className="outer-facets xl:mt-[125px] lg:mt-[125px] mt-0">
-                        <div className="xl:grid xl:grid-cols-2 lg:grid-cols-2">
-                            <div className="grid grid-rows-4 gap-0">
+                    <div className="outer-facets xl:mt-[75px] lg:mt-[75px] mt-0">
+                        <div className="lg:grid lg:grid-cols-2">
+                            <div className="text-center lg:text-right sm:mr-[100px]">
 
                                 {/* <div className="text-center m-auto m-auto">
                                     <Image src="/images/facets/facet1.png" alt="DesigNova" width={400} height={400} quality={100} className="w-[200px] h-[200px] transform hover:scale-95 transition-transform duration-650 ease-in-out shadow-xl md:w-[300px] md:h-[300px] lg:w-[300px] lg:h-[300px] xl:w-[400px] xl:h-[400px] rounded-md" />
@@ -50,56 +50,56 @@ export default function Home() {
                                     <Link className="" href="/3d-cad"><Button size="lg" variant={"theme"}>Learn More</Button> </Link>
                                 </div> */}
 
-                                <div className="text-center m-auto">
+                                <div className="text-center m-auto inline-block mt-[75px]">
                                     <h3 className="text-xl md:text-3xl lg:text-3xl xl:text-3xl my-[25px] bg-theme mb-0 text-white py-2">CAD Design</h3>
                                     <div className="relative ">
-                                        <Image src="/images/facets/facet1.png" alt="DesigNova" width={500} height={500} quality={100} className="rounded-0 h-auto w-[400px] shadow-xl" />
+                                        <Image src="/images/facets/facet1.png" alt="DesigNova" width={500} height={500} quality={100} className="rounded-0 object-cover h-[400px] w-[400px] shadow-xl" />
                                         <Link className="absolute bottom-[25px] left-[32.5%] transform hover:scale-95 transition-transform duration-500 ease-in-out" href="/3d-cad"><Button size="xl" variant={"theme"}>Learn More</Button> </Link>
                                     </div>
                                 </div>
 
-                                <div className="text-center m-auto">
+                                <div className="text-center m-auto inline-block mt-[75px]">
                                     <h3 className="text-xl md:text-3xl lg:text-3xl xl:text-3xl my-[25px] bg-theme mb-0 text-white py-2">Casting</h3>
                                     <div className="relative">
-                                        <Image src="/images/facets/facet2.png" alt="DesigNova" width={400} height={400} quality={100} className="rounded-0 h-auto w-[400px] shadow-xl" />
+                                        <Image src="/images/facets/facet2.png" alt="DesigNova" width={400} height={400} quality={100} className="rounded-0 object-cover h-[400px] w-[400px] shadow-xl" />
                                         <Link className="absolute bottom-[25px] left-[32.5%] transform hover:scale-95 transition-transform duration-500 ease-in-out" href="/casting"><Button size="lg" variant={"theme"}>Learn More</Button></Link>
                                     </div>
                                 </div>
-                                <div className="text-center m-auto">
+                                <div className="text-center m-auto inline-block mt-[75px]">
                                     <h3 className="text-xl md:text-3xl lg:text-3xl xl:text-3xl my-[25px] bg-theme mb-0 text-white py-2">Finishing</h3>
                                     <div className="relative">
-                                        <Image src="/images/facets/facet3.png" alt="DesigNova" width={400} height={400} quality={100} className="rounded-0 h-auto w-[400px] shadow-xl" />
+                                        <Image src="/images/facets/facet3.png" alt="DesigNova" width={400} height={400} quality={100} className="rounded-0 object-cover h-[400px] w-[400px] shadow-xl" />
                                         <Link className="absolute bottom-[25px] left-[32.5%] transform hover:scale-95 transition-transform duration-500 ease-in-out" href="/finishing"><Button size="lg" variant={"theme"}>Learn More</Button></Link>
                                     </div>
                                 </div>
-                                <div className="text-center m-auto m-auto">
+                                <div className="text-center m-auto inline-block mt-[75px]">
                                     <h3 className="text-xl md:text-3xl lg:text-3xl xl:text-3xl my-[25px] bg-theme mb-0 text-white py-2">Setting</h3>
                                     <div className="relative">
-                                        <Image src="/images/facets/facet4.png" alt="DesigNova" width={400} height={400} quality={100} className="rounded-0 h-auto w-[400px] shadow-xl" />
+                                        <Image src="/images/facets/facet4.png" alt="DesigNova" width={400} height={400} quality={100} className="rounded-0 object-cover h-[400px] w-[400px] shadow-xl" />
                                         <Link className="absolute bottom-[25px] left-[32.5%] transform hover:scale-95 transition-transform duration-500 ease-in-out" href="/setting"><Button size="lg" variant={"theme"}>Learn More</Button></Link>
                                     </div>
                                 </div>
                             </div>
-                            <div className="grid grid-rows-3 gap-0">
-
-                                <div className="text-center m-auto">
+                            <div className="text-center lg:text-left sm:mr-[100px]">
+                                <div className="lg:mt-[200px]"></div>
+                                <div className="text-center m-auto inline-block mt-[75px]">
                                     <h3 className="text-xl md:text-3xl lg:text-3xl xl:text-3xl my-[25px] bg-theme mb-0 text-white py-2">Creation</h3>
                                     <div className="relative">
-                                        <Image src="/images/facets/facet5.png" alt="DesigNova" width={400} height={400} quality={100} className="rounded-0 h-auto w-[400px] shadow-xl" />
+                                        <Image src="/images/facets/facet5.png" alt="DesigNova" width={400} height={400} quality={100} className="rounded-0 object-cover h-[400px] w-[400px] shadow-xl" />
                                         <Link className="absolute bottom-[25px] left-[32.5%] transform hover:scale-95 transition-transform duration-500 ease-in-out" href="/creation"><Button size="lg" variant={"theme"}>Learn More</Button></Link>
                                     </div>
                                 </div>
-                                <div className="text-center m-auto">
+                                <div className="text-center m-auto inline-block mt-[75px]">
                                     <h3 className="text-xl md:text-3xl lg:text-3xl xl:text-3xl my-[25px] bg-theme mb-0 text-white py-2">Branding</h3>
                                     <div className="relative">
-                                        <Image src="/images/facets/facet6.png" alt="DesigNova" width={400} height={400} quality={100} className="rounded-0 h-auto w-[400px] shadow-xl" />
+                                        <Image src="/images/facets/facet6.png" alt="DesigNova" width={400} height={400} quality={100} className="rounded-0 object-cover h-[400px] w-[400px] shadow-xl" />
                                         <Link className="absolute bottom-[25px] left-[32.5%] transform hover:scale-95 transition-transform duration-500 ease-in-out" href="/branding"><Button size="lg" variant={"theme"}>Learn More</Button></Link>
                                     </div>
                                 </div>
-                                <div className="text-center m-auto m-auto">
+                                <div className="text-center m-auto inline-block mt-[75px]">
                                     <h3 className="text-xl md:text-3xl lg:text-3xl xl:text-3xl my-[25px] bg-theme mb-0 text-white py-2">Partnership</h3>
                                     <div className="relative">
-                                        <Image src="/images/facets/facet7.png" alt="DesigNova" width={400} height={400} quality={100} className="rounded-0 h-auto w-[400px] shadow-xl" />
+                                        <Image src="/images/facets/facet7.png" alt="DesigNova" width={400} height={400} quality={100} className="rounded-0 object-cover h-[400px] w-[400px] shadow-xl" />
                                         <Link className="absolute bottom-[25px] left-[32.5%] transform hover:scale-95 transition-transform duration-500 ease-in-out" href="/partnership"><Button size="lg" variant={"theme"}>Learn More</Button></Link>
                                     </div>
                                 </div>

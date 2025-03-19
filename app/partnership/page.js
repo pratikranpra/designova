@@ -65,9 +65,9 @@ export default function Home() {
                                     transition={{ duration: 0.8, ease: "easeOut", delay: 0.35 }}
                                     className="text-center m-auto mt-16"
                                 >
-                                    <Image src="/images/partners/partner-1.png" alt="DesigNova" width={500} height={500} className="mt-16 h-auto w-[400px]" quality={100} />
-                                    <Image src="/images/partners/partner-2.png" alt="DesigNova" width={500} height={500} className="mt-16 h-auto w-[400px]" quality={100} />
-                                    <Image src="/images/partners/partner-3.png" alt="DesigNova" width={500} height={500} className="mt-16 h-auto w-[400px]" quality={100} />
+                                    <Link target="_blank" href="https://www.sproutdesignlab.com/"><Image src="/images/partners/partner-1.png" alt="DesigNova" width={500} height={500} className="mt-16 h-auto w-[400px]" quality={100} /></Link>
+                                    <Link target="_blank" href="https://patsywesson.com/"><Image src="/images/partners/partner-2.png" alt="DesigNova" width={500} height={500} className="mt-16 h-auto w-[400px]" quality={100} /></Link>
+                                    <Link target="_blank" href="https://www.julianagrippa.com/"><Image src="/images/partners/partner-3.png" alt="DesigNova" width={500} height={500} className="mt-16 h-auto w-[400px]" quality={100} /></Link>
                                 </motion.div>
 
                                 <motion.div
@@ -77,9 +77,9 @@ export default function Home() {
                                     transition={{ duration: 0.8, ease: "easeOut", delay: 0.35 }}
                                     className="text-center m-auto mt-4"
                                 >
-                                    <Image src="/images/partners/partner-4.png" alt="DesigNova" width={500} height={500} className="mt-16 h-auto w-[400px]" quality={100} />
-                                    <Image src="/images/partners/partner-5.png" alt="DesigNova" width={500} height={500} className="mt-16 h-auto w-[400px]" quality={100} />
-                                    <Image src="/images/partners/partner-6.png" alt="DesigNova" width={500} height={500} className="mt-16 h-auto w-[400px]" quality={100} />
+                                    <Link target="_blank" href="https://www.southerngem.co/"><Image src="/images/partners/partner-4.png" alt="DesigNova" width={500} height={500} className="mt-16 h-auto w-[400px]" quality={100} /></Link>
+                                    <Link target="_blank" href="https://www.aggiediamonds.com/"><Image src="/images/partners/partner-5.png" alt="DesigNova" width={500} height={500} className="mt-16 h-auto w-[400px]" quality={100} /></Link>
+                                    <Link target="_blank" href="https://designhousejewelry.com/"><Image src="/images/partners/partner-6.png" alt="DesigNova" width={500} height={500} className="mt-16 h-auto w-[400px]" quality={100} /></Link>
                                 </motion.div>
                             </div>
 

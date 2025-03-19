@@ -3,16 +3,21 @@
 import { static_const } from '../lib/constants';
 
 import Link from 'next/link'
-import Image from "next/image";
 import { useState, useEffect } from "react";
 
 /*import { Home, Menu, ShoppingBag, User, Search, IndianRupee, X } from "lucide-react";
 import { Icons } from "@/components/ui/icons"*/
-import { motion } from "framer-motion";
 
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  navigationMenuTriggerStyle,
+} from "@/components/ui/navigation-menu"
+
 import {
   Sheet,
   SheetClose,
@@ -23,6 +28,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
+import { Separator } from '@radix-ui/react-select';
 
 
 export default function HeaderLogin() {
@@ -50,11 +56,10 @@ export default function HeaderLogin() {
         <div className="flex items-center header-menu justify-between my-4">
           <div className="header-menu-item one">
             <Link href="/">
-              {/* <Image className='mt-4' src={logo_url} height={200} width={200} alt="Design Nova" loading="lazy" quality={100} /> */}
               <h3 className='text-2xl font-light niramit-3 lg:text-4xl lg:text-3xl md:text-2xl'>{static_const['site_title']}</h3>
             </Link>
           </div>
-          <div className="header-menu-item three flex flex-row hidden md:flex lg:flex xl:flex">
+          <div className="header-menu-item three flex flex-row hidden d-none">
             <div className='mx-[20px]'>
               <Link className='text-[18px]' href={"/facets"}>Facets</Link>
             </div>
@@ -67,6 +72,132 @@ export default function HeaderLogin() {
             <div className='mx-[20px] mr-0'>
               <Link className='text-[18px]' href={"/contact-us"}>Contact Us</Link>
             </div>
+          </div>
+
+          <div className='navigation-outer hidden md:block'>
+            <NavigationMenu>
+              <NavigationMenuList>
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger>Facets</NavigationMenuTrigger>
+                  <NavigationMenuContent className="shadow-xl">
+
+                    <div className="row-span-3-">
+                      <Link href="/facets" legacyBehavior passHref>
+                        <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                          <span className='text-[20px] text-bold theme-color'>Explore Facets</span>
+                        </NavigationMenuLink>
+                      </Link>
+                    </div>
+
+                    <ul className="grid gap-3 p-4 lg:grid-rows-[.75fr_1fr] min-w-[225px]">
+                      <li className="row-span-3">
+                        <Link href="/3d-cad" legacyBehavior passHref>
+                          <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                            <span className='underline underline-offset-[6px] decoration-[#7D8494]'>CAD Design</span>
+                          </NavigationMenuLink>
+                        </Link>
+                      </li>
+                      <li className="row-span-3">
+                        <Link href="/creation" legacyBehavior passHref>
+                          <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                            <span className='underline underline-offset-[6px] decoration-[#7D8494]'>Creation</span>
+                          </NavigationMenuLink>
+                        </Link>
+                      </li>
+                      <li className="row-span-3">
+                        <Link href="/casting" legacyBehavior passHref>
+                          <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                            <span className='underline underline-offset-[6px] decoration-[#7D8494]'>Casting</span>
+                          </NavigationMenuLink>
+                        </Link>
+                      </li>
+                      <li className="row-span-3">
+                        <Link href="/finishing" legacyBehavior passHref>
+                          <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                            <span className='underline underline-offset-[6px] decoration-[#7D8494]'>Finishing</span>
+                          </NavigationMenuLink>
+                        </Link>
+                      </li>
+                      <li className="row-span-3">
+                        <Link href="/setting" legacyBehavior passHref>
+                          <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                            <span className='underline underline-offset-[6px] decoration-[#7D8494]'>Setting</span>
+                          </NavigationMenuLink>
+                        </Link>
+                      </li>
+                      <li className="row-span-3">
+                        <Link href="/branding" legacyBehavior passHref>
+                          <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                            <span className='underline underline-offset-[6px] decoration-[#7D8494]'>Branding</span>
+                          </NavigationMenuLink>
+                        </Link>
+                      </li>
+                      <li className="row-span-3">
+                        <Link href="/partnership" legacyBehavior passHref>
+                          <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                            <span className='underline underline-offset-[6px] decoration-[#7D8494]'>Partnership</span>
+                          </NavigationMenuLink>
+                        </Link>
+                      </li>
+
+                    </ul>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+
+
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger>Story</NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <ul className="grid gap-3 p-4 lg:grid-rows-[.75fr_1fr] min-w-[225px]">
+                      <li className="row-span-3">
+                        <Link href="/our-story" legacyBehavior passHref>
+                          <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                            <span className='underline underline-offset-[6px] decoration-[#7D8494]'>Our Story</span>
+                          </NavigationMenuLink>
+                        </Link>
+                      </li>
+                      <li className="row-span-3">
+                        <Link href="/sustainability" legacyBehavior passHref>
+                          <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                            <span className='underline underline-offset-[6px] decoration-[#7D8494]'>Sustainability</span>
+                          </NavigationMenuLink>
+                        </Link>
+                      </li>
+                      <li className="row-span-3">
+                        <Link href="/our-team" legacyBehavior passHref>
+                          <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                            <span className='underline underline-offset-[6px] decoration-[#7D8494]'>Our Team</span>
+                          </NavigationMenuLink>
+                        </Link>
+                      </li>
+                      <li className="row-span-3">
+                        <Link href="/partnership" legacyBehavior passHref>
+                          <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                            <span className='underline underline-offset-[6px] decoration-[#7D8494]'>Partnership / Brands</span>
+                          </NavigationMenuLink>
+                        </Link>
+                      </li>
+                    </ul>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+
+
+                <NavigationMenuItem>
+                  <Link href="/learn" legacyBehavior passHref>
+                    <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                      Learn
+                    </NavigationMenuLink>
+                  </Link>
+                </NavigationMenuItem>
+                <NavigationMenuItem>
+                  <Link href="/contact-us" legacyBehavior passHref>
+                    <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                      Contact us
+                    </NavigationMenuLink>
+                  </Link>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
           </div>
 
           <div className='block md:hidden lg:hidden xl:hidden'>
@@ -87,12 +218,56 @@ export default function HeaderLogin() {
 
                   </SheetDescription>
                 </SheetHeader>
+
+
                 <div className="py-8 px-4">
                   <div className='m-[20px]'>
                     <Link className='text-[18px]' href={"/facets"}>Facets</Link>
+                    <div className="submenu">
+                      <ul className="pl-4 pt-1">
+                        <li className="row-span-3">
+                          <Link href="/3d-cad" className='text-[18px] my-[4px] inline-block'>CAD Design</Link>
+                        </li>
+                        <li className="row-span-3">
+                          <Link href="/creation" className='text-[18px] my-[4px] inline-block'>Creation</Link>
+                        </li>
+                        <li className="row-span-3">
+                          <Link href="/casting" className='text-[18px] my-[4px] inline-block'>Casting</Link>
+                        </li>
+                        <li className="row-span-3">
+                          <Link href="/finishing" className='text-[18px] my-[4px] inline-block'>Finishing</Link>
+                        </li>
+                        <li className="row-span-3">
+                          <Link href="/setting" className='text-[18px] my-[4px] inline-block'>Setting</Link>
+                        </li>
+                        <li className="row-span-3">
+                          <Link href="/branding" className='text-[18px] my-[4px] inline-block'>Branding</Link>
+                        </li>
+                        <li className="row-span-3">
+                          <Link href="/partnership" className='text-[18px] my-[4px] inline-block'>Partnership</Link>
+                        </li>
+                      </ul>
+                    </div>
+
                   </div>
                   <div className='m-[20px]'>
                     <Link className='text-[18px]' href={"/story"}>Story</Link>
+                    <div className="submenu">
+                      <ul className="pl-4 pt-1">
+                        <li className="row-span-3">
+                          <Link href="/our-story" className='text-[18px] my-[4px] inline-block'>Our Story</Link>
+                        </li>
+                        <li className="row-span-3">
+                          <Link href="/sustainability" className='text-[18px] my-[4px] inline-block'>Sustainability</Link>
+                        </li>
+                        <li className="row-span-3">
+                          <Link href="/our-team" className='text-[18px] my-[4px] inline-block'>Our Team</Link>
+                        </li>
+                        <li className="row-span-3">
+                          <Link href="/partnership" className='text-[18px] my-[4px] inline-block'>Partnership / Brands</Link>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                   <div className='m-[20px]'>
                     <Link className='text-[18px]' href={"/learn"}>Learn</Link>

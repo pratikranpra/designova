@@ -20,9 +20,9 @@ export default function FooterLogin() {
                                     <Link href="/contact-us" className="relative group text-[18px]"><span className="relative text-white font-normal">Contact Us<span className="absolute left-0 bottom-0 w-0 h-[2px] bg-white transition-all duration-500 group-hover:w-full before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[2px] before:bg-white before:transition-all before:duration-500 before:ease-in-out before:animate-underline mt-3" /></span></Link>
                                 </li>
                                 <li className="mb-4">
-                                    <Link href="/track-order" className="relative group text-[18px]"><span className="relative text-white font-normal">Track your order<span className="absolute left-0 bottom-0 w-0 h-[2px] bg-white transition-all duration-500 group-hover:w-full before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[2px] before:bg-white before:transition-all before:duration-500 before:ease-in-out before:animate-underline mt-3" /></span></Link>
+                                    <Link href="https://cloud.designova.studio/" target='_blank' className="relative group text-[18px]"><span className="relative text-white font-normal">Track your order<span className="absolute left-0 bottom-0 w-0 h-[2px] bg-white transition-all duration-500 group-hover:w-full before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[2px] before:bg-white before:transition-all before:duration-500 before:ease-in-out before:animate-underline mt-3" /></span></Link>
                                 </li>
-                                <li className="mb-4">
+                                <li className="mb-4 d-none hidden">
                                     <Link href="/return-policy" className="relative group text-[18px]"><span className="relative text-white font-normal">Return Policy<span className="absolute left-0 bottom-0 w-0 h-[2px] bg-white transition-all duration-500 group-hover:w-full before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[2px] before:bg-white before:transition-all before:duration-500 before:ease-in-out before:animate-underline mt-3" /></span></Link>
                                 </li>
                             </ul>
@@ -34,16 +34,16 @@ export default function FooterLogin() {
                                     <Link href="/sustainability" className="relative group text-[18px]"><span className="relative text-white font-normal">Sustainablity<span className="absolute left-0 bottom-0 w-0 h-[2px] bg-white transition-all duration-500 group-hover:w-full before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[2px] before:bg-white before:transition-all before:duration-500 before:ease-in-out before:animate-underline mt-3" /></span></Link>
                                 </li>
                                 <li className="mb-4">
-                                    <Link href="/about-us" className="relative group text-[18px]"><span className="relative text-white font-normal">About Us<span className="absolute left-0 bottom-0 w-0 h-[2px] bg-white transition-all duration-500 group-hover:w-full before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[2px] before:bg-white before:transition-all before:duration-500 before:ease-in-out before:animate-underline mt-3" /></span></Link>
+                                    <Link href="/our-story" className="relative group text-[18px]"><span className="relative text-white font-normal">About Us<span className="absolute left-0 bottom-0 w-0 h-[2px] bg-white transition-all duration-500 group-hover:w-full before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[2px] before:bg-white before:transition-all before:duration-500 before:ease-in-out before:animate-underline mt-3" /></span></Link>
                                 </li>
                                 <li className="mb-4">
-                                    <Link href="/services" className="relative group text-[18px]"><span className="relative text-white font-normal">Services<span className="absolute left-0 bottom-0 w-0 h-[2px] bg-white transition-all duration-500 group-hover:w-full before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[2px] before:bg-white before:transition-all before:duration-500 before:ease-in-out before:animate-underline mt-3" /></span></Link>
+                                    <Link href="/facets" className="relative group text-[18px]"><span className="relative text-white font-normal">Facets<span className="absolute left-0 bottom-0 w-0 h-[2px] bg-white transition-all duration-500 group-hover:w-full before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[2px] before:bg-white before:transition-all before:duration-500 before:ease-in-out before:animate-underline mt-3" /></span></Link>
                                 </li>
                                 <li className="mb-4">
-                                    <Link href="/branding" className="relative group text-[18px]"><span className="relative text-white font-normal">Brands<span className="absolute left-0 bottom-0 w-0 h-[2px] bg-white transition-all duration-500 group-hover:w-full before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[2px] before:bg-white before:transition-all before:duration-500 before:ease-in-out before:animate-underline mt-3" /></span></Link>
+                                    <Link href="/partnership" className="relative group text-[18px]"><span className="relative text-white font-normal">Partnerships<span className="absolute left-0 bottom-0 w-0 h-[2px] bg-white transition-all duration-500 group-hover:w-full before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[2px] before:bg-white before:transition-all before:duration-500 before:ease-in-out before:animate-underline mt-3" /></span></Link>
                                 </li>
                                 <li className="mb-4">
-                                    <Link href="/" className="relative group text-[18px]"><span className="relative text-white font-normal">Knowledge<span className="absolute left-0 bottom-0 w-0 h-[2px] bg-white transition-all duration-500 group-hover:w-full before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[2px] before:bg-white before:transition-all before:duration-500 before:ease-in-out before:animate-underline mt-3" /></span></Link>
+                                    <Link href="/learn" className="relative group text-[18px]"><span className="relative text-white font-normal">Knowledge<span className="absolute left-0 bottom-0 w-0 h-[2px] bg-white transition-all duration-500 group-hover:w-full before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[2px] before:bg-white before:transition-all before:duration-500 before:ease-in-out before:animate-underline mt-3" /></span></Link>
                                 </li>
                             </ul>
                         </div>
@@ -60,15 +60,15 @@ export default function FooterLogin() {
                     <div className="px-4 py-8 md:py-0 lg:py-0 xl:py-0 pl-0 bg-black-100 dark:bg-gray-700 md:flex md:items-center md:justify-between mt-0">
                         <div>
                             <div className="flex mt-4 mb-2 md:mt-0 space-x-5 rtl:space-x-reverse justify-center sm:justify-start md:justify-start lg:justify-start xl:justify-start align-center center">
-                                <a href="#" className="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                                <Link target='_blank' href="https://www.facebook.com/profile.php?id=61556643003496" className="text-gray-400 hover:text-gray-900 dark:hover:text-white">
                                     <SlSocialFacebook className='text-white text-2xl' />
-                                </a>
-                                <a href="#" className="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                                </Link>
+                                <Link target='_blank' href="https://www.instagram.com/designovastudios/" className="text-gray-400 hover:text-gray-900 dark:hover:text-white">
                                     <SlSocialInstagram className='text-white text-2xl' />
-                                </a>
-                                <a href="#" className="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                                </Link>
+                                <Link target='_blank' href="https://www.linkedin.com/company/designova-studios/" className="text-gray-400 hover:text-gray-900 dark:hover:text-white">
                                     <SlSocialYoutube className='text-white text-2xl' />
-                                </a>
+                                </Link>
                             </div>
 
                             {/* <Image src={logo_url} height={100} width={100} alt="Design Nova" loading="lazy" quality={100} className='bg-white my-[20px]' /> */}

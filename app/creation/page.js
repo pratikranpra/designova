@@ -22,7 +22,7 @@ export default function Home() {
             {/* section-1 */}
             <section className="section section-1 m-auto relative" >
                 <div className="h-full">
-                    <Image src="/images/settings_bg.png" alt="DesigNova" width={0} height={0} sizes="100vw" className="lg:w-full lg:h-screen xl:w-full xl:h-screen w-full h-screen object-cover" quality={100} />
+                    <Image src="/images/creation_bg.png" alt="DesigNova" width={0} height={0} sizes="100vw" className="lg:w-full lg:h-screen xl:w-full xl:h-screen w-full h-screen object-cover" quality={100} />
 
                 </div>
             </section>
