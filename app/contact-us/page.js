@@ -76,7 +76,7 @@ export default function ContactUs() {
         try {
             const { name, email, subject, phone, company, message } = data
 
-            const response = await fetch('http://dfw-it-partner-cust-odoo-designova-stage-16059765.dev.odoo.com/api/wordpress/contact/', {
+            const response = await fetch('https://dfw-it-partner-cust-odoo-designova-stage-19154487.dev.odoo.com/api/wordpress/contact', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ name, email, subject, phone, company, message }),
