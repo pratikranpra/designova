@@ -49,7 +49,7 @@ export default function Home() {
                         <p className="text-xl mt-2 w-[95%] sm:w-[90%] md:w-[75%] lg:w-[75%] xl:w-[75%] text-center m-auto">The benefits of a win-win partnership are numerous. It leads to increased efficiency, as both parties can streamline processes and reduce redundancies. It also fosters a positive working environment, where both sides feel valued and motivated to contribute their best efforts. Additionally, such partnerships often result in higher customer satisfaction, as the collaborative approach ensures that products and services are of the highest quality. Ultimately, a win-win partnership drives growth and success for all involved, creating a sustainable and prosperous future.</p>
 
                         <div className="mt-12 text-center">
-                            <Link href="/partnership"><Button size="xl" variant="theme">Partner with Us Today</Button></Link>
+                            <Link href="/contact-us"><Button size="xl" variant="theme">Partner with Us Today</Button></Link>
                         </div>
                     </div>
 
