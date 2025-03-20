@@ -11,9 +11,38 @@ import Footer from './../../layouts/footer'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
+import { Toaster } from "@/components/ui/sonner"
+import { toast } from "sonner"
+
+
+import {
+    Form,
+    FormControl,
+    FormDescription,
+    FormField,
+    FormItem,
+    FormLabel,
+    FormMessage,
+} from "@/components/ui/form"
 
 import ReCAPTCHA from 'react-google-recaptcha';
 import { static_const } from "@/lib/constants";
+
+import { useForm } from "react-hook-form"
+import { zodResolver } from "@hookform/resolvers/zod"
+import { z } from "zod"
+
+const formSchema = z.object({
+    name: z
+        .string({ message: 'Please enter your name' }).min(3),
+    email: z
+        .string({ message: 'Please enter your email' }).email({ message: 'Please enter a valid email' }),
+    subject: z.optional(z.string()),
+    phone: z.optional(z.string()),
+    company: z.optional(z.string()),
+    message: z
+        .string({ message: 'Please enter your message' }).min(10),
+})
 
 
 export default function ContactUs() {
@@ -32,6 +61,44 @@ export default function ContactUs() {
     const asyncScriptOnLoad = () => {
         console.log('Google recaptcha loaded just fine')
     }
+
+    // When the form is submitted
+    const [error, setError] = useState(null)
+
+    const form = useForm({
+        resolver: zodResolver(formSchema),
+    });
+
+    async function onSubmit(data) {
+        setError(null)
+        //toast("Event has been created.")
+
+        try {
+            const { name, email, subject, phone, company, message } = data
+
+            const response = await fetch('http://dfw-it-partner-cust-odoo-designova-stage-16059765.dev.odoo.com/api/wordpress/contact/', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ name, email, subject, phone, company, message }),
+                credentials: 'include',
+            })
+
+            if (response.ok) {
+                const data = await response.json();
+                console.log(data)
+                toast("We have received your message!")
+            } else {
+                toast({ title: "Something went wrong!", description: "Please check with your device..", })
+                const error = await response.text();
+                console.error('API Error:', error, 'Status Code:', response.status);
+            }
+
+        } catch (error) {
+            setError(error.message)
+        } finally {
+            //setIsLoading(false)
+        }
+    };
 
     return (
         <div className="page page-wrapper" >
@@ -64,31 +131,89 @@ export default function ContactUs() {
                             <p className="text-md niramit-3">Our team will be in touch soon for further info!</p>
 
                             <div className="mt-8 ">
-                                <form method="post" action="/submit-form">
-                                    <div className="form-group my-6">
-                                        <Input type="text" required id="name" name="name" className="text-[16px]" placeholder="Your Name*" />
-                                    </div>
-                                    <div className="form-group my-6">
-                                        <Input type="email" required id="email" name="email" className="text-[16px]" placeholder="Your Email*" />
-                                    </div>
-                                    <div className="form-group my-6">
-                                        <Textarea placeholder="Your message*" required name="message" id="message" className="text-[16px] h-[110px]" />
-                                    </div>
+                                <Form {...form} >
+                                    <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8" >
+                                        <div className="form-group my-6">
+                                            <FormField control={form.control} className="my-5" name="name" render={({ field }) => (
+                                                <FormItem className="my-10">
+                                                    <FormControl>
+                                                        <Input type="text" placeholder="Enter your name*" {...field} />
+                                                    </FormControl>
+                                                    <FormMessage />
+                                                </FormItem>
+                                            )}
+                                            />
+                                        </div>
+                                        <div className="form-group my-6">
+                                            <FormField control={form.control} className="my-5" name="email" render={({ field }) => (
+                                                <FormItem className="my-10">
+                                                    <FormControl>
+                                                        <Input type="email" placeholder="Enter your email*" {...field} />
+                                                    </FormControl>
+                                                    <FormMessage />
+                                                </FormItem>
+                                            )}
+                                            />
+                                        </div>
+                                        <div className="form-group my-6">
+                                            <FormField control={form.control} className="my-5" name="subject" render={({ field }) => (
+                                                <FormItem className="my-10">
+                                                    <FormControl>
+                                                        <Input type="text" placeholder="Your message subject" {...field} />
+                                                    </FormControl>
+                                                    <FormMessage />
+                                                </FormItem>
+                                            )}
+                                            />
+                                        </div>
+                                        <div className="form-group my-6">
+                                            <FormField control={form.control} className="my-5" name="phone" render={({ field }) => (
+                                                <FormItem className="my-10">
+                                                    <FormControl>
+                                                        <Input type="number" inputMode="numeric" maxLength="10" placeholder="Your phone number" {...field} />
+                                                    </FormControl>
+                                                    <FormMessage />
+                                                </FormItem>
+                                            )}
+                                            />
+                                        </div>
+                                        <div className="form-group my-6">
+                                            <FormField control={form.control} className="my-5" name="company" render={({ field }) => (
+                                                <FormItem className="my-10">
+                                                    <FormControl>
+                                                        <Input type="text" placeholder="Company name" {...field} />
+                                                    </FormControl>
+                                                    <FormMessage />
+                                                </FormItem>
+                                            )}
+                                            />
+                                        </div>
+                                        <div className="form-group my-6">
+                                            <FormField control={form.control} className="my-5 text-[16px] h-[110px]" name="message" render={({ field }) => (
+                                                <FormItem className="my-10">
+                                                    <FormControl>
+                                                        <Textarea placeholder="Your message*" {...field} />
+                                                    </FormControl>
+                                                    <FormMessage />
+                                                </FormItem>
+                                            )}
+                                            />
+                                        </div>
 
-                                    <div className="form-group my-6 captcha-area">
-                                        <ReCAPTCHA
-                                            ref={recaptchaRef}
-                                            sitekey={static_const['captcha_site_key']}
-                                            onChange={(value) => setCaptchaValue(value)}
-                                            asyncScriptOnLoad={asyncScriptOnLoad}
-                                        />
-                                    </div>
+                                        <div className="form-group my-6 captcha-area">
+                                            <ReCAPTCHA
+                                                ref={recaptchaRef}
+                                                sitekey={static_const['captcha_site_key']}
+                                                onChange={(value) => setCaptchaValue(value)}
+                                                asyncScriptOnLoad={asyncScriptOnLoad}
+                                            />
+                                        </div>
 
-                                    <div className="form-group my-6">
-                                        <Button type="submit" size="xl" variant="theme">Send Message</Button>
-                                    </div>
-
-                                </form>
+                                        <div className="form-group my-6">
+                                            <Button type="submit" size="xl" variant="theme">Send Message</Button>
+                                        </div>
+                                    </form>
+                                </Form>
                             </div>
                         </div>
                     </div>
@@ -113,6 +238,8 @@ export default function ContactUs() {
             </section >
 
             <Footer />
+
+            <Toaster />
         </div >
     );
 }

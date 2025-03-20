@@ -85,7 +85,7 @@ export default function Home() {
 
       {/* section-1 */}
       <section className="section section-1 m-auto relative" >
-        <Image src="/images/cover_home.png" alt="DesigNova" width={0} height={0} sizes="100vw" style={{ width: '100%', height: 'auto' }} quality={100} />
+        <Image src="/images/cover_home.png" alt="DesigNova" width={0} height={0} sizes="100vw" quality={100} className="lg:w-full lg:h-screen xl:w-full xl:h-screen w-full h-screen object-cover" />
 
         <div className="container m-auto absolute w-[75%] left-[5%] bottom-[30%]">
           <Image src="/images/logo-t.png" alt="DesigNova" width={300} height={300} quality={100} className="" />
@@ -145,16 +145,16 @@ export default function Home() {
             <p className="text-2xl m-auto pl-8 mb-4">The Collaboration and Partnership</p>
             <div className="centered image relative">
               <div className="flex justify-center">
-                <h3 className="h-[150px] w-[150px] rounded-[50%] text-center  text-xl text-white bg-[#7D8494] px-[15px] py-[40px] m-2 cursor-pointer inline-block">Transparency</h3>
-                <h3 className="h-[150px] w-[150px] rounded-[50%] text-center text-xl text-white bg-[#7D8494] px-[15px] py-[40px] m-2 cursor-pointer inline-block">Design to Conception</h3>
+                <h3 className="h-[150px] w-[150px] rounded-[50%] text-center  text-xl text-white bg-[#7D8494] px-[15px] py-[40px] m-2 cursor-pointer inline-flex items-center justify-center">Transparency</h3>
+                <h3 className="h-[150px] w-[150px] rounded-[50%] text-center text-xl text-white bg-[#7D8494] px-[15px] py-[40px] m-2 cursor-pointer inline-flex items-center justify-center">Design to Conception</h3>
               </div>
               <div className="flex justify-center">
-                <h3 className="h-[150px] w-[150px] rounded-[50%] text-center  text-xl text-white bg-[#7D8494] px-[15px] py-[40px] m-2 cursor-pointer inline-block">Communication</h3>
-                <h3 className="h-[150px] w-[150px] rounded-[50%] text-center  text-xl text-white bg-[#7D8494] px-[15px] py-[40px] m-2 cursor-pointer inline-block">Ethical Sourcing</h3>
+                <h3 className="h-[150px] w-[150px] rounded-[50%] text-center  text-xl text-white bg-[#7D8494] px-[15px] py-[40px] m-2 cursor-pointer inline-flex items-center justify-center">Communication</h3>
+                <h3 className="h-[150px] w-[150px] rounded-[50%] text-center  text-xl text-white bg-[#7D8494] px-[15px] py-[40px] m-2 cursor-pointer inline-flex items-center justify-center">Ethical Sourcing</h3>
               </div>
               <div className="flex justify-center">
-                <h3 className="h-[150px] w-[150px] rounded-[50%] text-center %] text-xl text-white bg-[#7D8494] px-[15px] py-[40px] m-2 cursor-pointer inline-block">Reliability</h3>
-                <h3 className="h-[150px] w-[150px] rounded-[50%] text-center  text-xl text-white bg-[#7D8494] px-[15px] py-[40px] m-2 cursor-pointer inline-block">Data & Logistics</h3>
+                <h3 className="h-[150px] w-[150px] rounded-[50%] text-center %] text-xl text-white bg-[#7D8494] px-[15px] py-[40px] m-2 cursor-pointer inline-flex items-center justify-center">Reliability</h3>
+                <h3 className="h-[150px] w-[150px] rounded-[50%] text-center  text-xl text-white bg-[#7D8494] px-[15px] py-[40px] m-2 cursor-pointer inline-flex items-center justify-center">Data & Logistics</h3>
               </div>
               <p className="text-2xl m-auto pl-8 mt-12 text-center m-auto">You Expect and Deserve</p>
 

@@ -120,6 +120,15 @@ select:border-b:focus-visible {
     opacity: 0.25;
 }
 
+.toaster.group {
+    position: fixed !important;
+    top: 45% !important;
+    bottom: unset !important;
+    right: 45% !important;
+    left: unset !important;
+    z-index: 999;
+}
+
 @media screen and (max-width: 1022px) and (min-width: 300px) {
     .inner-section .float-right {
         float: none;
