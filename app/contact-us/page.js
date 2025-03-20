@@ -71,7 +71,7 @@ export default function ContactUs() {
 
     async function onSubmit(data) {
         setError(null)
-        //toast("Event has been created.")
+        toast("We have received your message! Our team will contact you soon")
 
         try {
             const { name, email, subject, phone, company, message } = data
@@ -86,7 +86,7 @@ export default function ContactUs() {
             if (response.ok) {
                 const data = await response.json();
                 console.log(data)
-                toast("We have received your message!")
+                toast("We have received your message! Our team will contact you soon")
             } else {
                 toast({ title: "Something went wrong!", description: "Please check with your device..", })
                 const error = await response.text();
