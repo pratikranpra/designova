@@ -80,7 +80,7 @@ export default function ContactUs() {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ name, email, subject, phone, company, message }),
-                credentials: 'include',
+                
             })
 
             if (response.ok) {
