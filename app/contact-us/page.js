@@ -79,7 +79,7 @@ export default function ContactUs() {
             const response = await fetch('https://dfw-it-partner-cust-odoo-designova-stage-19154487.dev.odoo.com/api/wordpress/contact', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ name, email, subject, phone, company, message }),
+                body: JSON.stringify({ 'name': 'dummy_name' }),
                 
             })
 
